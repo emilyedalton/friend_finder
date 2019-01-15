@@ -11,8 +11,9 @@ var dogFriends = require("../data/friends.js");
 // ===============================================================================
 // ROUTING
 // ===============================================================================
-
 module.exports = function(app) {
+
+
   // API GET Requests
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
@@ -23,5 +24,17 @@ module.exports = function(app) {
     res.json(dogFriends);
   });
 
-}
+
   
+app.post("/api/friends", function(req, res) {
+    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
+    // It will do this by sending out the value "true" have a table
+    // req.body is available since we're using the body parsing middleware
+   var userdata =req.body;
+      dogFriends.push(req.body);
+      
+      //gets the last object that was insert from the client form
+      res.json(dogFriends[dogFriends.length-1]);
+    });
+   
+}

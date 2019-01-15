@@ -25,8 +25,11 @@ app.use(express.json());
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
-
+//this tells the server to go to the apiRoutes.js file, that file then gets the data from the friends.js file which exports the dogFriends object 
 require("./app/routing/apiRoutes.js")(app);
+// ================================================================================
+//this tells the server to go to the htmlRoutes.js file, that file then gets the data from the two html files which display using the route name 
+
 require("./app/routing/htmlRoutes.js")(app);
 
 // =============================================================================
