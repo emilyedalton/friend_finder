@@ -34,7 +34,7 @@
                   <input type="text" class="form-control" id="urlInput"  placeholder="Image url">
                 </div>
         
-            <!-- <hr>
+            <hr>
             <label>Question 1</label>
             <hr>
             <select class="custom-select" id = "ques1">
@@ -194,7 +194,7 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
                 <option value="10">10</option>
-            </select> -->
+            </select>
             <hr>
             <button type="submit" class="btn btn-dark submit" id="submit">Submit</button>
         </div>
@@ -211,25 +211,25 @@
     $(".submit").on("click", function(event) {
       event.preventDefault();
       console.log("hello");
-    });
-      // Here we grab the form elements
-    //   var newDoggo = {
-    //     name: $("#nameField").val().trim(),
-    //     image: $("#urlInput").val().trim(),
-        // responseArr: [ $("#ques1").val().trim(),
-        // $("#ques2").val().trim(),
-        // $("#ques3").val().trim(),
-        // $("#ques4").val().trim(),
-        // $("#ques5").val().trim(),
-        // $("#ques6").val().trim(),
-        // $("#ques7").val().trim(),
-        // $("#ques8").val().trim(),
-        // $("#ques9").val().trim(),
-        // $("#ques10").val().trim(),]
-    //   };
+   
+      //Here we grab the form elements
+      var newDoggo = {
+        name: $("#nameField").val().trim(),
+        image: $("#urlInput").val().trim(),
+        responseArr: [ $("#ques1").val().trim(),
+        $("#ques2").val().trim(),
+        $("#ques3").val().trim(),
+        $("#ques4").val().trim(),
+        $("#ques5").val().trim(),
+        $("#ques6").val().trim(),
+        $("#ques7").val().trim(),
+        $("#ques8").val().trim(),
+        $("#ques9").val().trim(),
+        $("#ques10").val().trim(),]
+      };
   
-    //   console.log(newDoggo);
-    // });
+      console.log(newDoggo);
+    });
 //putting data into the friends API
 //     $.post("/api/friends", newDoggo,
 //       function(data) {
