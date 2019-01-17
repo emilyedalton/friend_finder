@@ -199,6 +199,27 @@
             <button type="submit" class="btn btn-dark submit" id="submit">Submit</button>
         </div>
         <!--end containe text left-->
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title"><strong>I am your modal placeholder text</strong></h2>
+                </div>
+                <div class="modal-body">
+                  <h2 id="table-name"></h2>
+                  <img id="table-img"   alt="">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        
 </body>
 
 </html>
@@ -211,21 +232,22 @@
     $(".submit").on("click", function(event) {
       event.preventDefault();
       console.log("hello");
+      $("#results-modal").modal("toggle");
 
       //Here we grab the form elements this is also the current user that we will compare against all of the other answers
       var newDoggo = {
         name: $("#nameField").val().trim(),
         image: $("#urlInput").val().trim(),
         responseArr: [ $("#ques1").val().trim(),
-        $("#ques2").val().trim(),
-        $("#ques3").val().trim(),
-        $("#ques4").val().trim(),
-        $("#ques5").val().trim(),
-        $("#ques6").val().trim(),
-        $("#ques7").val().trim(),
-        $("#ques8").val().trim(),
-        $("#ques9").val().trim(),
-        $("#ques10").val().trim(),]
+        $("#ques2").val(),
+        $("#ques3").val(),
+        $("#ques4").val(),
+        $("#ques5").val(),
+        $("#ques6").val(),
+        $("#ques7").val(),
+        $("#ques8").val(),
+        $("#ques9").val(),
+        $("#ques10").val(),]
       };
   
       console.log(newDoggo);
@@ -233,15 +255,13 @@
 //putting data into the friends API
     $.post("/api/friends", newDoggo,function(data){
         console.log(data)
-    // {
-    //       if (data) {
-    //       alert("new dogs woff!");
+    // Clear the form when submitting
+        $("#nameField").val("");
+        $("#urlInput").val("");
+        // $("#reserve-email").val("");
+        // $("#reserve-unique-id").val("");
         });
 });
-        // If a table is available... tell user they on the waiting list.
-    //     else {
-    //       alert("no dogs for you");
-    //     }
-    //   });
-    // });
+
+   
 </script>
