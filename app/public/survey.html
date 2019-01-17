@@ -25,7 +25,7 @@
         </div>
         <!--end Jumbotron container-->
         <div class="container text-left">
-        <form>
+        <form method ="POST">
                 <div class="form-group">
                   <label for="enterName">name</label>
                   <input type="text" class="form-control" id="nameField"  placeholder="Enter your name">
@@ -212,7 +212,7 @@
       event.preventDefault();
       console.log("hello");
 
-      //Here we grab the form elements
+      //Here we grab the form elements this is also the current user that we will compare against all of the other answers
       var newDoggo = {
         name: $("#nameField").val().trim(),
         image: $("#urlInput").val().trim(),
@@ -229,9 +229,19 @@
       };
   
       console.log(newDoggo);
-    });
+   
 //putting data into the friends API
-//     $.post("/api/friends", newDoggo,
-//       function(data) {
-// });
+    $.post("/api/friends", newDoggo,function(data){
+        console.log(data)
+    // {
+    //       if (data) {
+    //       alert("new dogs woff!");
+        });
+});
+        // If a table is available... tell user they on the waiting list.
+    //     else {
+    //       alert("no dogs for you");
+    //     }
+    //   });
+    // });
 </script>
