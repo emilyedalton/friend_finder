@@ -33,7 +33,7 @@ app.post("/api/friends", function(req, res) {
     // req.body is available since we're using the body parsing middleware
    var userCurrentdata =req.body;
 
-   //tableData
+//tableData
 //this is an object 
 var storeTotaldifference = [];
 var results = 0;
@@ -72,10 +72,10 @@ console.log(dogFriends);
 
 console.log("Match:"+storeTotaldifference[0].totalDifference );
 console.log("name:"+storeTotaldifference[0].name +" image: "+ storeTotaldifference[0].image );
-      dogFriends.push(req.body);
+      // dogFriends.push(req.body);
       
-      //gets the last object that was insert from the client form
-      res.json(dogFriends[dogFriends.length-1]);
+     // gets the last object that was insert from the client form
+       res.json(storeTotaldifference[0]);
     });
    
 }
