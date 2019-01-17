@@ -52,7 +52,7 @@
 
             </select>
             <hr>
-            <h2>Question 2</h2>
+            <label>Question 2</label>
             <hr>
             <select class="custom-select"id = "ques2">
 
@@ -68,7 +68,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 3</h2>
+            <label>Question 3</label>
             <hr>
             <select class="custom-select"id = "ques3">
 
@@ -84,7 +84,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 4</h2>
+            <label>Question 4</label>
             <hr>
             <select class="custom-select"id = "ques4">
 
@@ -100,7 +100,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 5</h2>
+            <label>Question 5</label>
             <hr>
             <select class="custom-select"id = "ques5">
 
@@ -116,7 +116,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 6</h2>
+            <label>Question 6</label>
             <hr>
             <select class="custom-select"id = "ques6">
 
@@ -132,7 +132,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 7</h2>
+            <label>Question 7</label>
             <hr>
             <select class="custom-select"id = "ques7">
 
@@ -148,7 +148,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 8</h2>
+            <label>Question 8</label>
             <hr>
             <select class="custom-select" id = "ques8">
 
@@ -164,7 +164,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 9</h2>
+            <label>Question 9</label>
             <hr>
             <select class="custom-select" id = "ques9">
 
@@ -180,7 +180,7 @@
                 <option value="10">10</option>
             </select>
             <hr>
-            <h2>Question 10</h2>
+            <label>Question 10</label>
             <hr>
             <select class="custom-select"id = "ques10">
 
@@ -210,7 +210,7 @@
                 </div>
                 <div class="modal-body">
                   <h2 id="dog-name"></h2>
-                  <img id="table-img"   alt="">
+                  <img id="dog-img"   alt="">
                 </div>
                 <div class="modal-footer">
                   <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -269,13 +269,13 @@
 //you need to declare in tableData.js first. 
 //Then you can call it with data.urlImage
   
- $("#table-img").attr("src", data.image);
+ $("#dog-img").attr("src",data.image);
  // Show the modal for current reservation
 
     // Clear the form when submitting
-        // $("#nameField").val("");
-        // $("#urlInput").val("");
-        // $(".custom-select").val("");
+        $("#nameField").val("");
+        $("#urlInput").val("");
+        $(".custom-select").val("");
         });
 });
 
