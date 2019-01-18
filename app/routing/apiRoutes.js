@@ -29,18 +29,19 @@ module.exports = function(app) {
   
 app.post("/api/friends", function(req, res) {
     // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    // req.body is available since we're using the body parsing middleware
+    // req.body is available since we're using the body parsing middleware this variable will get the the object array from the friends.js file
    var userCurrentdata =req.body;
 
-//tableData
-//this is an object 
-var storeTotaldifference = [];
+
+//the object that we will compare against the other objects in friends.js will be stored here 
+var bestDog = [];
 var results = 0;
+//iterates through the array of objects
 for (var i = 0; i < dogFriends.length; i++) {
 
    //reset the results so it won't retain the previous total scores difference
    var results = 0;
+   //iterates through the dog friends object, but specifcally answers to the survey questions stored in responseArr
    for (var j = 0; j < dogFriends[i].responseArr.length; j++) {
        results += parseInt(userCurrentdata.responseArr[j]) - parseInt(dogFriends[i].responseArr[j]);
 
@@ -49,7 +50,7 @@ for (var i = 0; i < dogFriends.length; i++) {
    // Math.abs(results) will get rid of negative integers.
    //Then it will put each object with total difference
    // in a separate array of object called storeTotaldifference
-   storeTotaldifference.push({ name: dogFriends[i].name, image: dogFriends[i].image, totalDifference: Math.abs(results) });
+   bestDog.push({ name: dogFriends[i].name, image: dogFriends[i].image, totalDifference: Math.abs(results) });
 
 }//end outer for loop
 
@@ -58,7 +59,7 @@ for (var i = 0; i < dogFriends.length; i++) {
 //this npm package allows you to sort the array of object.
 //The first argument would
 //be the array of objects and the second argument would be your property name to //be sorted in ascending order
-arraySort(storeTotaldifference, 'totalDifference');
+arraySort(bestDog, 'totalDifference');
 
 
 //insert current user to the existing tableData
@@ -70,12 +71,12 @@ dogFriends.push(userCurrentdata);
 
 console.log(dogFriends);
 
-console.log("Match:"+storeTotaldifference[0].totalDifference );
-console.log("name:"+storeTotaldifference[0].name +" image: "+ storeTotaldifference[0].image );
+console.log("Match:"+bestDog[0].totalDifference );
+console.log("name:"+bestDog[0].name +" image: "+ bestDog[0].image );
       // dogFriends.push(req.body);
       
      // gets the last object that was insert from the client form
-       res.json(storeTotaldifference[0]);
+       res.json(bestDog[0]);
     });
    
 }

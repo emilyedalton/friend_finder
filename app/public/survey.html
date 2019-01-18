@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+<link rel="stylesheet" href="css/style.css">
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@
         <div class="jumbotron">
             <h1 class="display-4"> Man's best friend finder  <i class="fas fa-dog"></i></h1>
            
- <a class="btn btn-dark btn-lg" href="#" role="button">Home</a>
+ <a class="btn btn-dark btn-lg" href="./home" role="button">Home</a>
             </p>
 
         </div>
@@ -236,7 +236,6 @@
     $(".submit").on("click", function(event) {
       event.preventDefault();
       console.log("hello");
-
       //Here we grab the form elements this is also the current user that we will compare against all of the other answers
       var newDoggo = {
         name: $("#nameField").val().trim(),
@@ -263,10 +262,8 @@
       
     //getting the image from the match
         // $("#table-img").image(data.image);
-
      //calling the modal    
      $("#results-modal").modal("toggle");
-
 //since we don't have our table array object with url property
 //we made the link static. 
 //If you want it to read from the table array object, 
@@ -275,13 +272,11 @@
   
  $("#dog-img").attr("src",data.image);
  // Show the modal for current reservation
-
     // Clear the form when submitting
         $("#nameField").val("");
         $("#urlInput").val("");
         $(".custom-select").val("");
         });
 });
-
    
 </script>
