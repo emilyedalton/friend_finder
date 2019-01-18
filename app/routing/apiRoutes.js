@@ -46,14 +46,14 @@ for (var i = 0; i < dogFriends.length; i++) {
 
    }
    //Then it will put each object with the total difference into the bestdog array of objects
-   bestDog.push({ name: dogFriends[i].name, image: dogFriends[i].image, matchDiff: Math.abs(results) });
+   bestDog.push({ name: dogFriends[i].name, image: dogFriends[i].image, totalDifference: Math.abs(results) });
 
 }
 
 // Here is where the array-sort module comes into play. The first argument is the array of objects that needs to be sorted,
 // in this case, the bestDog object that was created out of the data from the api/friends.js file
 //The first argument is the array of objects and the second argument is the name of the property that wil be sorted
-arraySort(bestDog, 'matchDiff');
+arraySort(bestDog, 'totalDifference');
 
 
 //insert current user to the existing tableData
@@ -63,7 +63,7 @@ dogFriends.push(currentDog);
 //which is the closest match
 
 console.log(dogFriends);
-console.log(`Match: ${bestDog[0].matchDiff}` );
+console.log(`Match: ${bestDog[0].totalDifference}` );
 console.log( `Name: ${bestDog[0].name} Image: ${bestDog[0].image}`);
       
      // returns the object we created 
