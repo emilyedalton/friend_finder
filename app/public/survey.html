@@ -7,276 +7,280 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
- <!-- JS -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body>
     <div class="container text-center">
         <div class="jumbotron">
-            <h1 class="display-4"> Man's best friend finder  <i class="fas fa-dog"></i></h1>
-           
- <a class="btn btn-dark btn-lg" href="./home" role="button">Home</a>
+            <h1 class="display-4"> Man's best friend finder <i class="fas fa-dog"></i></h1>
+
+            <a class="btn btn-dark btn-lg" href="./home" role="button">Home</a>
             </p>
 
         </div>
         <!--end Jumbotron container-->
         <div class="container text-left">
-        <form method ="POST">
+            <form method="POST">
                 <div class="form-group">
-                  <label for="enterName">Name</label>
-                  <input type="text" class="form-control" id="nameField"  placeholder="Enter your name">
-                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                  <label for="enterName">Image URL</label>
-                  <input type="text" class="form-control" id="urlInput"  placeholder="Image url">
+                    <label for="enterName">Name</label>
+                    <input type="text" class="form-control" id="nameField" placeholder="Enter your name">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    <label for="enterName">Image URL</label>
+                    <input type="text" class="form-control" id="urlInput" placeholder="Image url">
                 </div>
-        
-            <hr>
-            <label>Question 1: You like a home with other dogs</label>
-            <hr>
-            <select class="custom-select" id = "ques1">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
+                <hr>
+                <label>Question 1: You like a home with other dogs</label>
+                <hr>
+                <select class="custom-select" id="ques1">
 
-            </select>
-            <hr>
-            <label>Question 2: You enjoy the company of cats</label>
-            <hr>
-            <select class="custom-select"id = "ques2">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 3: You like a big yard to run around in</label>
-            <hr>
-            <select class="custom-select"id = "ques3">
+                </select>
+                <hr>
+                <label>Question 2: You enjoy the company of cats</label>
+                <hr>
+                <select class="custom-select" id="ques2">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 4: You enjoy sleeping all day</label>
-            <hr>
-            <select class="custom-select"id = "ques4">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 3: You like a big yard to run around in</label>
+                <hr>
+                <select class="custom-select" id="ques3">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 5: You prefer kibble over wet food</label>
-            <hr>
-            <select class="custom-select"id = "ques5">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 4: You enjoy sleeping all day</label>
+                <hr>
+                <select class="custom-select" id="ques4">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 6: If given the chance, you will destroy any shoes left around the house</label>
-            <hr>
-            <select class="custom-select"id = "ques6">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 5: You prefer kibble over wet food</label>
+                <hr>
+                <select class="custom-select" id="ques5">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 7: You need many walks a day</label>
-            <hr>
-            <select class="custom-select"id = "ques7">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 6: If given the chance, you will destroy any shoes left around the house</label>
+                <hr>
+                <select class="custom-select" id="ques6">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 8: You are gentle around small children</label>
-            <hr>
-            <select class="custom-select" id = "ques8">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 7: You need many walks a day</label>
+                <hr>
+                <select class="custom-select" id="ques7">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 9: You enjoy long car rides</label>
-            <hr>
-            <select class="custom-select" id = "ques9">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 8: You are gentle around small children</label>
+                <hr>
+                <select class="custom-select" id="ques8">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <label>Question 10: You are a very, very, very, good boy (or girl)</label>
-            <hr>
-            <select class="custom-select"id = "ques10">
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 9: You enjoy long car rides</label>
+                <hr>
+                <select class="custom-select" id="ques9">
 
-                <option selected></option>
-                <option value="1">1 (strongly agree)</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 (strongly disagree)</option>
-            </select>
-            <hr>
-            <button type="submit" class="btn btn-dark submit" id="submit">Submit</button>
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <label>Question 10: You are a very, very, very, good boy (or girl)</label>
+                <hr>
+                <select class="custom-select" id="ques10">
+
+                    <option selected></option>
+                    <option value="1">1 (strongly agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10 (strongly disagree)</option>
+                </select>
+                <hr>
+                <button type="submit" class="btn btn-dark submit" id="submit">Submit</button>
         </div>
         <!--end container text left-->
         <div id="results-modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
-        
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button class="close" data-dismiss="modal">&times;</button>
-                  <h2 class="modal-title"><strong>Woof! Your new best dog pal is:</strong></h2>
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Woof! Your new best dog pal is:</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="dog-name"></h2>
+                        <!--setting a max widh on the image inside of the modal ensures that the image won't extend outside of it-->
+                        <!--more on that here: https://stackoverflow.com/questions/39850568/resize-image-inside-modal-window-->
+                        <img id="dog-img" style="height:250px;max-width: 100%;" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <h2 id="dog-name"></h2>
-                <!--setting a max widh on the image inside of the modal ensures that the image won't extend outside of it-->
-                <!--more on that here: https://stackoverflow.com/questions/39850568/resize-image-inside-modal-window-->
-                  <img id="dog-img" style="height:250px;max-width: 100%;" alt="">
-                </div>
-                <div class="modal-footer">
-                  <button class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-        
+
             </div>
-          </div>
-        
+        </div>
+
 </body>
 
 </html>
 <script type="text/javascript">
     // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
     // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-    // Our api recognizes the route (/data/friends)... and then runs the associated code (found in api-routes.js).
     // In this case the associated code "saves" the data to the friends.js 
-  // submit button works because class is assigned after the color info
-    $(".submit").on("click", function(event) {
-      event.preventDefault();
-      console.log("hello");
-      //Here we grab the form elements this is also the current user that we will compare against all of the other answers
-      var newDoggo = {
-        name: $("#nameField").val().trim(),
-        image: $("#urlInput").val().trim(),
-        responseArr: [ $("#ques1").val().trim(),
-        $("#ques2").val(),
-        $("#ques3").val(),
-        $("#ques4").val(),
-        $("#ques5").val(),
-        $("#ques6").val(),
-        $("#ques7").val(),
-        $("#ques8").val(),
-        $("#ques9").val(),
-        $("#ques10").val(),]
-      };
-  
-      console.log(newDoggo);
-   
-//putting data into the friends API
-    $.post("/api/friends", newDoggo,function(data){
-        console.log(data)
-       //getting the name text from the match
-         $("#dog-name").text(data.name);
-      
-    //getting the image from the match
-        // $("#table-img").image(data.image);
-     //calling the modal    
-     $("#results-modal").modal("toggle");
-//since we don't have our table array object with url property
-//we made the link static. 
-//If you want it to read from the table array object, 
-//you need to declare in tableData.js first. 
-//Then you can call it with data.urlImage
-  
- $("#dog-img").attr("src",data.image);
-// Clear the form when submitting
-        $("#nameField").val("");
-        $("#urlInput").val("");
-        $(".custom-select").val("");
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+        console.log("hello");
+        //Here we grab the form elements this is also the current user that we will compare against all of the other answers
+        var newDoggo = {
+            name: $("#nameField").val().trim(),
+            image: $("#urlInput").val().trim(),
+            responseArr: [$("#ques1").val().trim(),
+            $("#ques2").val(),
+            $("#ques3").val(),
+            $("#ques4").val(),
+            $("#ques5").val(),
+            $("#ques6").val(),
+            $("#ques7").val(),
+            $("#ques8").val(),
+            $("#ques9").val(),
+            $("#ques10").val(),]
+        };
+
+        console.log(newDoggo);
+
+        //putting data into the friends API
+        $.post("/api/friends", newDoggo, function (data) {
+            console.log(data)
+            //getting the name text from the match
+            $("#dog-name").text(data.name);
+
+            //getting the image from the match
+            //calling the modal    
+            $("#results-modal").modal("toggle");
+
+
+            $("#dog-img").attr("src", data.image);
+            // Clear the form on submit
+            $("#nameField").val("");
+            $("#urlInput").val("");
+            $(".custom-select").val("");
         });
-});
-   
+    });
+
 </script>
