@@ -28,7 +28,7 @@ module.exports = function(app) {
 
   
 app.post("/api/friends", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
+    // Our "server"  will respond to requests and let users know if they have a table or not.
     // req.body is available since we're using the body parsing middleware this variable will get the the object array from the friends.js file
    var userCurrentdata =req.body;
 
