@@ -9,7 +9,7 @@
 
 The results algorithm determines the best match for the user based on the the absolute value of their survey responses. 
 
-Using the array-sort npm package, the app takes the stored "best match" value, loops through the array of objects with the stored survey response value, then uses a bubble sort algorithm after to compare the user objects based on the total difference parameter resulting in the objects with the least total difference "bubbling up" and sorting in ascending order. The first first object in that array is the best match for the current user. 
+Using the array-sort npm package, the app takes the stored "best match" value, loops through the array of objects with the stored survey response value, then uses a bubble sort algorithm to compare the user objects based on the total difference parameter resulting in the objects with the least total difference "bubbling up" and sorting in ascending order. The first first object in that array is the best match for the current user. 
 
 
 ![](assets/modal_demo.gif)
