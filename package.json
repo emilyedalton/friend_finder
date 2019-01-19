@@ -1,0 +1,26 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "Man's best friend finder is a full-stack site that takes in survey results and simulates a compatibility app by comparing those answers with those from other users. The app then display the name and picture of the user with the best overall match.",
+  "main": "server.js",
+  "dependencies": {
+    "array-sort": "^1.0.0",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilyedalton/friend_finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilyedalton/friend_finder/issues"
+  },
+  "homepage": "https://github.com/emilyedalton/friend_finder#readme"
+}
