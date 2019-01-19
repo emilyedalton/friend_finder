@@ -59,8 +59,7 @@ arraySort(bestDog, 'totalDifference');
 //insert current user to the existing tableData
 dogFriends.push(currentDog);
 
-//first element of this array of object has the least total difference after sorting in //ascending order
-//which is the closest match
+//the first element of this array of objects has the least total difference after being sorted in ascending order
 
 console.log(dogFriends);
 console.log(`Match: ${bestDog[0].totalDifference}` );
